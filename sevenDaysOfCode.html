@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--A parte do HTML eu que quis colocar pois pra mim fica mais claro para entender o que está acontecendo.-->
+
+    <div >
+        <strong>Comparação numeroUm e stringUm</strong>
+        <p class="divNumeroUm"></p>
+    </div>
+    <div >
+        <strong>Comparação numeroTrinta e stringTrinta</strong>
+        <p class="divNumeroTrinta"></p>
+    </div>
+    <div >
+        <strong>Comparação numeroDez e stringDez</strong>
+        <p class="divNumeroDez"></p>
+    </div>
+    
+
+    <script>
+let numeroUm = 1
+let stringUm = '1'
+let numeroTrinta = 30
+let stringTrinta = '30'
+let numeroDez = 10
+let stringDez = '10'
+let divNumeroUm = document.querySelector('.divNumeroUm')
+let divNumeroTrinta = document.querySelector('.divNumeroTrinta')
+let divNumeroDez = document.querySelector('.divNumeroDez')
+
+
+        if( numeroUm == stringUm){
+            divNumeroUm.innerHTML = 'As variáveis numeroUm e stringUm tem o mesmo valor, mas tipos diferentes.'
+        }else{
+            divNumeroUm.innerHTML = 'As variáveis numeroUm e stringUm não tem o mesmo valor.'
+        }
+
+        if( numeroTrinta === stringTrinta){
+            divNumeroTrinta.innerHTML = 'As variáveis numeroTrinta e stringTrinta tem o mesmo valor e mesmo tipo'
+        }else{
+            divNumeroTrinta.innerHTML = 'As variáveis numeroTrinta e stringTrinta não tem o mesmo tipo.'
+        }
+
+        if( numeroDez == stringDez){
+            divNumeroDez.innerHTML = 'As variáveis numeroDez e stringDez tem o mesmo valor, mas tipos diferentes.'
+        }else{
+            divNumeroDez.innerHTML = 'As variáveis numeroDez e stringDez não tem o mesmo valor.'
+        }
+
+
+    </script>
+</body>
+</html>
